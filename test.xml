@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Tests" preserve-order="true">
+	
+	<parameter name="myBrowser" value="chrome" />
+	<parameter name="environment" value="https://useinsider.com/" />
+		
+		
+	<test name="scenario-1">
+		<classes>
+			<class name="suites.TestSuite">
+				<methods>
+					<include name="goToUrl" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="scenario-2">
+		<classes>
+			<class name="suites.TestSuite">
+				<methods>
+					<include name="goToCareerPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="scenario-3">
+		<classes>
+			<class name="suites.TestSuite">
+				<methods>
+					<include name="chooseQAJobs" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="scenario-4">
+		<classes>
+			<class name="suites.TestSuite">
+				<methods>
+					<include name="checkQAJobs" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="scenario-5">
+		<classes>
+			<class name="suites.TestSuite">
+				<methods>
+					<include name="checkApplyJobPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+
+</suite>
